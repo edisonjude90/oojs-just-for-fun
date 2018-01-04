@@ -8,7 +8,7 @@ function Car(engineCapacity,engineNumber,chaseNumber,frameNumber){
 }
 
 Car.CalculateTroque = function(speed, rpm){
-	return Math.round(rpm / speed);
+	console.log(Math.round(rpm / speed));
 }
 
 Car.prototype.startEngine = function(){
@@ -45,5 +45,17 @@ SportsCar.prototype.getCarDetail = function(){
 }
 
 var sportcar1 = new SportsCar("14000cc","123AAAEEE","3333AAAEE","EEETTT3333","2-Door","Red","Car 1");
+
+sportcar1.getCarDetail();
+
+sportcar1.startEngine();
+
+sportcar1.accelerate();
+
+sportcar1.stopEngine();
+
+Car.CalculateTroque(54,3000);
+
+
 
 
