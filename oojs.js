@@ -46,7 +46,7 @@ function SportsCar(engineCapacity,engineNumber,chaseNumber,frameNumber,carType,c
 
 SportsCar.prototype = Object.create(Car.prototype);
 
-// Ater Inheriting Car.prototype SprotsCar constructor needs to set to SportsCar as it was overwritten 
+// After Inheriting Car.prototype SprotsCar constructor needs to set to SportsCar as it was overwritten 
 
 SportsCar.prototype.constructor = SportsCar;
 
